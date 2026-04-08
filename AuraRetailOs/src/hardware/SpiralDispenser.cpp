@@ -1,16 +1,19 @@
-#ifndef REFRIGERATIONMODULE_H
-#define REFRIGERATIONMODULE_H
+#include <iostream>
+#include "hardware/SpiralDispenser.h"
 
-#include "hardware/KioskModule.h"
+SpiralDispenser::SpiralDispenser() : ready(false) {}
 
-class RefrigerationModule : public KioskModule {
-private:
-    int temperature;
+void SpiralDispenser::calibrate() {
+    ready = true;
+    std::cout << "[SpiralDispenser] Coil calibrated." << std::endl;
+}
 
-public:
-    RefrigerationModule(KioskInterface* kiosk, int temp);
-    void setTemperature(int temp);
-    void purchaseItem(const std::string& productId, const std::string& paymentMethod) override;
-};
+bool SpiralDispenser::isReady() const {
+    return ready;
+}
 
-#endif
+bool SpiralDispenser::dispense(const std::string& productId) {
+    if (!ready) calibrate();
+    std::cout << "[SpiralDispenser] Rotating coil -- dispensing product: " << productId << std::endl;
+    return true;
+}

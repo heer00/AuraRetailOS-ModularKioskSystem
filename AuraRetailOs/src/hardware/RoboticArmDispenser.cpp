@@ -1,14 +1,19 @@
 #include <iostream>
 #include "hardware/RoboticArmDispenser.h"
 
-void RoboticArmDispenser::dispense(const std::string& productId) {
-    std::cout << "[RoboticArmDispenser] Arm picking and placing product: " << productId << std::endl;
-}
-
-bool RoboticArmDispenser::isReady() {
-    return false;
-}
+RoboticArmDispenser::RoboticArmDispenser() : ready(false) {}
 
 void RoboticArmDispenser::calibrate() {
-    std::cout << "[RoboticArmDispenser] Arm calibrated and zeroed.\n";
+    ready = true;
+    std::cout << "[RoboticArmDispenser] Arm calibrated and zeroed." << std::endl;
+}
+
+bool RoboticArmDispenser::isReady() const {
+    return ready;
+}
+
+bool RoboticArmDispenser::dispense(const std::string& productId) {
+    if (!ready) calibrate();
+    std::cout << "[RoboticArmDispenser] Arm picking and placing product: " << productId << std::endl;
+    return true;
 }

@@ -5,9 +5,9 @@
 
 class Dispenser {
 public:
-    virtual void dispense(const std::string& productId) = 0;
-    virtual bool isReady() = 0;
     virtual void calibrate() = 0;
+    virtual bool isReady() const = 0;
+    virtual bool dispense(const std::string& productId) = 0;
     virtual ~Dispenser() {}
 };
 
