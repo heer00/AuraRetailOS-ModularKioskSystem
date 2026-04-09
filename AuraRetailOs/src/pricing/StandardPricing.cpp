@@ -1,5 +1,9 @@
+#include <iostream>
 #include "pricing/StandardPricing.h"
 
 double StandardPricing::computePrice(Item* item) {
-    return item->getPrice();
+    double price = item->getPrice();
+    std::cout << "[StandardPricing] Price for " << item->getName()
+              << ": Rs." << price << std::endl;
+    return price;
 }
