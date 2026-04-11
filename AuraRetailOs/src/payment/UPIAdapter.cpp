@@ -12,6 +12,4 @@ bool UPIAdapter::refund(const std::string& transactionId) {
     return true;
 }
 
-std::string UPIAdapter::getStatus() const {
-    return "UPI:online";
-}
+std::string UPIAdapter::getStatus() const { return "UPI:online"; }

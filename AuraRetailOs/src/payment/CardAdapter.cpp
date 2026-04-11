@@ -12,6 +12,4 @@ bool CardAdapter::refund(const std::string& transactionId) {
     return true;
 }
 
-std::string CardAdapter::getStatus() const {
-    return "Card:online";
-}
+std::string CardAdapter::getStatus() const { return "Card:online"; }

@@ -7,8 +7,4 @@ std::string Product::getId() const { return id; }
 std::string Product::getName() const { return name; }
 double Product::getPrice() const { return price; }
 int Product::getStock() const { return stock; }
-void Product::setStock(int stock) { this->stock = stock; }
-
-Product* Product::clone() const {
-    return new Product(*this);
-}
+void Product::setStock(int s) { stock = s; }

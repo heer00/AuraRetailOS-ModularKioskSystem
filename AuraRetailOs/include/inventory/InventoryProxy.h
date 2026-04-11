@@ -12,7 +12,7 @@ private:
     bool authorize(const std::string& operation, const std::string& productId);
 
 public:
-    InventoryProxy(Inventory* realInventory, const std::string& user);
+   InventoryProxy(Inventory*, string)
 
     void addItem(Item* item) override;
     Item* getItem(const std::string& id) override;
