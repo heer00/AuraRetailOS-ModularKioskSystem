@@ -2,7 +2,6 @@
 #define PAYMENT_H
 #include <string>
 
-// TARGET interface in the Adapter Pattern
 class Payment {
 public:
     virtual bool pay(double amount) = 0;

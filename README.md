@@ -34,7 +34,49 @@ AuraRetailOS-Subtask2/
 
 ---
 
-## How to compile
+## Prerequisites
+- C++17 compatible compiler
+- Git (optional)
+
+## Running on Windows
+
+### Install Compiler
+Install MinGW or Visual Studio.
+
+Check installation:
+g++ --version
+
+### Navigate to Project
+cd path\to\your\project
+
+### Compile
+g++ -std=c++17 -Iinclude src/main.cpp src/inventory/Product.cpp src/inventory/RealInventory.cpp src/inventory/InventoryProxy.cpp src/inventory/Bundle.cpp src/payment/CardAdapter.cpp src/payment/UPIAdapter.cpp src/payment/WalletAdapter.cpp src/payment/PaymentPool.cpp src/pricing/StandardPricing.cpp src/pricing/DiscountPricing.cpp src/pricing/EmergencyPricing.cpp -o aura_sim
+
+### Run
+aura_sim.exe
+
+## Running on Ubuntu
+
+### Install Compiler
+sudo apt update
+sudo apt install g++
+
+### Navigate
+cd ~/project
+or
+cd /mnt/c/path/to/project
+
+### Compile
+g++ -std=c++17 -Iinclude src/main.cpp src/inventory/Product.cpp src/inventory/RealInventory.cpp src/inventory/InventoryProxy.cpp src/inventory/Bundle.cpp src/payment/CardAdapter.cpp src/payment/UPIAdapter.cpp src/payment/WalletAdapter.cpp src/payment/PaymentPool.cpp src/pricing/StandardPricing.cpp src/pricing/DiscountPricing.cpp src/pricing/EmergencyPricing.cpp -o aura_sim
+
+### Run
+./aura_sim
+
+## Notes
+- Ensure include folder exists
+- Use C++17 standard
+- Use chmod +x aura_sim if permission issues occur
+
 
 ```bash
 g++ -std=c++17 -Iinclude \
