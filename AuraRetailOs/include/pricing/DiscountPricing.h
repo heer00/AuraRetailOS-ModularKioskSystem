@@ -2,7 +2,6 @@
 #define DISCOUNTPRICING_H
 #include "pricing/PricingPolicy.h"
 
-// Concrete Strategy: applies % discount
 class DiscountPricing : public PricingPolicy {
 private:
     double discountRate;
