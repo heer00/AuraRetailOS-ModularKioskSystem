@@ -1,3 +1,4 @@
+// NetworkModule.h
 #ifndef NETWORKMODULE_H
 #define NETWORKMODULE_H
 
@@ -15,6 +16,7 @@ public:
     void setOffline(bool state);
     bool isOffline() const;
     void flushQueue();
+    void runDiagnostics() override;                            // add this
     void purchaseItem(const std::string& productId,
                       const std::string& paymentMethod) override;
 };
