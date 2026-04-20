@@ -1,7 +1,7 @@
 #ifndef USERWALLET_H
-  #define USERWALLET_H
-  #include <map>
-  #include <string>
+#define USERWALLET_H
+#include <map>
+#include <string>
    
   // Singleton pattern: one wallet store for the entire system
   class UserWallet {

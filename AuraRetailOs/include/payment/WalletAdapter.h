@@ -1,17 +1,20 @@
-  #ifndef WALLETADAPTER_H
-  #define WALLETADAPTER_H
-  #include <string>
-  #include "payment/Payment.h"
-   
-  // Adapter pattern: converts Payment interface to UserWallet's debit/credit API
-  class WalletAdapter : public Payment {
-  private:
-      std::string userId;
-      double      lastAmount;
-  public:
-      WalletAdapter(const std::string& userId = "guest");
-      bool pay(double amount) override;                          // debits UserWallet
-      bool refund(const std::string& transactionId) override;   // credits UserWallet
-      std::string getStatus() const override;
-  };
-  #endif
+#ifndef WALLET_ADAPTER_H
+#define WALLET_ADAPTER_H
+
+#include <string>
+#include "payment/Payment.h"
+
+class WalletAdapter : public Payment {
+private:
+    std::string userId;
+    double lastAmount;
+
+public:
+    WalletAdapter(const std::string& uid);
+
+    bool pay(double amount) override;
+    bool refund(const std::string& txnId) override;
+
+std::string getStatus() const override;};
+
+#endif

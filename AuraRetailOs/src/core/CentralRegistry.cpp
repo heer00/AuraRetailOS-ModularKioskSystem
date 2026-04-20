@@ -7,9 +7,8 @@ CentralRegistry::CentralRegistry() {
 }
 
 CentralRegistry* CentralRegistry::getInstance() {
-    if (instance == nullptr) {
+    if (instance == nullptr)
         instance = new CentralRegistry();
-    }
     return instance;
 }
 
@@ -18,16 +17,13 @@ void CentralRegistry::setConfig(const std::string& key, const std::string& value
 }
 
 std::string CentralRegistry::getConfig(const std::string& key) {
-    if (config.find(key) != config.end()) {
-        return config[key];
-    }
-    return "Not Found";
+    return config[key];
 }
 
-void CentralRegistry::setEmergencyMode(bool mode) {
+void CentralRegistry::setEmergency(bool mode) {
     emergencyMode = mode;
 }
 
-bool CentralRegistry::isEmergencyMode() const {
+bool CentralRegistry::isEmergency() {
     return emergencyMode;
 }
