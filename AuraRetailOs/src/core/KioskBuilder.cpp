@@ -29,5 +29,5 @@ KioskBuilder& KioskBuilder::addPricingPolicy(PricingPolicy* pr) {
 }
 
 Kiosk* KioskBuilder::build() {
-    return new Kiosk(dispenser, payment, inventory, pricingPolicy);
+    return new Kiosk(inventory, payment, dispenser, pricingPolicy);
 }

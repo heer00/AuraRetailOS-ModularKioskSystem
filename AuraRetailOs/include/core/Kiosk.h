@@ -14,21 +14,20 @@
       Dispenser*     dispenser;
       Payment*       payment;
       Inventory*     inventory;
-      PricingPolicy* pricingPolicy;
+      PricingPolicy* pricing;
   
   public:
-      Kiosk(Dispenser* d, Payment* p, Inventory* i, PricingPolicy* pr);
-  
+      Kiosk(Inventory* i, Payment* p, Dispenser* d, PricingPolicy* pr);
       Dispenser*     getDispenser()     const;
       Payment*       getPayment()       const;
       Inventory*     getInventory()     const;
       PricingPolicy* getPricingPolicy() const;
   
-      void purchaseItem(const std::string& productId,
-                        const std::string& paymentMethod) override;
-      void refundTransaction(const std::string& transactionId) override;
-      void restockInventory(const std::string& productId, int qty) override;
-      void runDiagnostics() override;
+    void purchaseItem(const std::string& productId,
+                  const std::string& paymentMethod);
+    void refundTransaction(const std::string& transactionId) override;
+    void restockInventory(const std::string& productId, int qty) override;
+    void runDiagnostics() override;
   };
   
   #endif
