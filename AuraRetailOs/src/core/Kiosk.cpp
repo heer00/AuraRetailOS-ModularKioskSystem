@@ -57,6 +57,11 @@ void Kiosk::restockInventory(const std::string& productId, int quantity) {
     std::cout << "Restocked " << productId << " with quantity " << quantity << "\n";
 }
 
+// Kiosk.cpp
 void Kiosk::runDiagnostics() {
-    std::cout << "Running diagnostics...\n";
+    std::cout << "[Kiosk] Running diagnostics...\n";
+    std::cout << "[Kiosk] Dispenser : " << (dispenser  ? "OK" : "MISSING") << "\n";
+    std::cout << "[Kiosk] Payment   : " << (payment    ? "OK" : "MISSING") << "\n";
+    std::cout << "[Kiosk] Inventory : " << (inventory  ? "OK" : "MISSING") << "\n";
+    std::cout << "[Kiosk] Pricing   : " << (pricing    ? "OK" : "MISSING") << "\n";
 }
