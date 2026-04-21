@@ -10,8 +10,18 @@ RestockCommand::RestockCommand(const std::string& productId,
       logMessage("Not executed") {}
 
 void RestockCommand::execute() {
-    std::cout << "\n--- RestockCommand: " << productId << " +" << quantity << " ---" << std::endl;
+    std::cout << "\n--- RestockCommand: " << productId
+              << " +" << quantity << " ---" << std::endl;
 
+    // Validation 1: quantity must be positive
+    if (quantity <= 0) {
+        logMessage = "FAILED: Restock quantity must be positive, got "
+                     + std::to_string(quantity);
+        std::cout << "[RestockCommand] " << logMessage << std::endl;
+        return;
+    }
+
+    // Validation 2: product must exist
     int currentStock = inventory->getStock(productId);
     if (currentStock < 0) {
         logMessage = "FAILED: Product not found [" + productId + "]";
@@ -21,7 +31,10 @@ void RestockCommand::execute() {
 
     inventory->updateStock(productId, currentStock + quantity);
 
-    logMessage = "RESTOCK: [" + productId + "] +" + std::to_string(quantity);
+    logMessage = "RESTOCK: [" + productId + "] +"
+                 + std::to_string(quantity)
+                 + " | new stock: "
+                 + std::to_string(currentStock + quantity);
     std::cout << "[RestockCommand] " << logMessage << std::endl;
 }
 
