@@ -11,8 +11,10 @@ private:
 public:
     void addItem(Item* item) override;
     Item* getItem(const std::string& id) override;
-    int getStock(const std::string& id) override;
-    void updateStock(const std::string& id, int newStock) override;
-};
+    int   getStock(const std::string& id) override;
+    void  updateStock(const std::string& id, int newStock) override;
 
+    // Returns all items — needed by InventoryStore::save()
+    const std::map<std::string, Item*>& getAll() const { return items; }
+};
 #endif
