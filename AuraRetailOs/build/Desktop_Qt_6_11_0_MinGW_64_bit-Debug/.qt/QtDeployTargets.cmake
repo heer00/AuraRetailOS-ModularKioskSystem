@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_AuraRetailOsCli_FILE C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AuraRetailOsCli.exe)
+set(__QT_DEPLOY_TARGET_AuraRetailOsCli_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_AuraRetailOsCli_RUNTIME_DLLS )
+set(__QT_DEPLOY_TARGET_AuraRetailOsGui_FILE C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AuraRetailOsGui.exe)
+set(__QT_DEPLOY_TARGET_AuraRetailOsGui_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_AuraRetailOsGui_RUNTIME_DLLS C:/Qt/6.11.0/mingw_64/bin/Qt6Widgets.dll;C:/Qt/6.11.0/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.11.0/mingw_64/bin/Qt6Core.dll)

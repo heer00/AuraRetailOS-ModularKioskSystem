@@ -19,3 +19,11 @@ void RealInventory::updateStock(const std::string& id, int newStock) {
         items[id]->setStock(newStock);
     }
 }
+
+std::vector<std::string> RealInventory::getAllProductIds() {
+    std::vector<std::string> ids;
+    for (auto const& pair : items) {
+        ids.push_back(pair.first);
+    }
+    return ids;
+}

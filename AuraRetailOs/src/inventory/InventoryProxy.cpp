@@ -30,8 +30,15 @@
   void InventoryProxy::updateStock(const std::string& id, int newStock) {
       if (authorize("updateStock", id)) {
           realInventory->updateStock(id, newStock);
-          // Observer pattern: fires automatically -- no changes needed in commands or kiosk
-          if (observer && newStock >= 0 && newStock <= lowStockThreshold)
-              observer->onLowStock(id, newStock);
-      }
-  }
+        // Observer pattern: fires automatically -- no changes needed in commands or kiosk
+        if (observer && newStock >= 0 && newStock <= lowStockThreshold)
+            observer->onLowStock(id, newStock);
+    }
+}
+
+std::vector<std::string> InventoryProxy::getAllProductIds() {
+    if (authorize("getAllProductIds", "all")) {
+        return realInventory->getAllProductIds();
+    }
+    return std::vector<std::string>();
+}

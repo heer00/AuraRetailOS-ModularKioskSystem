@@ -2,6 +2,7 @@
 #define REALINVENTORY_H
 
 #include <map>
+#include <vector>
 #include "inventory/Inventory.h"
 
 class RealInventory : public Inventory {
@@ -13,6 +14,7 @@ public:
     Item* getItem(const std::string& id) override;
     int getStock(const std::string& id) override;
     void updateStock(const std::string& id, int newStock) override;
+    std::vector<std::string> getAllProductIds() override;
 };
 
 #endif

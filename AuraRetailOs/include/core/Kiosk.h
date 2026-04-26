@@ -28,6 +28,7 @@
     void refundTransaction(const std::string& transactionId) override;
     void restockInventory(const std::string& productId, int qty) override;
     void runDiagnostics() override;
+    void setPayment(Payment* p);
   };
   
   #endif

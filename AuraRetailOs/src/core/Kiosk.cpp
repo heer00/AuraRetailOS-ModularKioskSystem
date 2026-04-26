@@ -65,3 +65,10 @@ void Kiosk::runDiagnostics() {
     std::cout << "[Kiosk] Inventory : " << (inventory  ? "OK" : "MISSING") << "\n";
     std::cout << "[Kiosk] Pricing   : " << (pricing    ? "OK" : "MISSING") << "\n";
 }
+
+void Kiosk::setPayment(Payment* p) {
+    if (payment) {
+        delete payment;
+    }
+    payment = p;
+}

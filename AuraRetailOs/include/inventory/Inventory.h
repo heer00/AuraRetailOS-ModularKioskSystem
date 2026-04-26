@@ -3,6 +3,7 @@
 
 #include "inventory/Item.h"
 #include <string>
+#include <vector>
 
 class Inventory {
 public:
@@ -10,6 +11,7 @@ public:
     virtual Item* getItem(const std::string& id) = 0;
     virtual int getStock(const std::string& id) = 0;
     virtual void updateStock(const std::string& id, int newStock) = 0;
+    virtual std::vector<std::string> getAllProductIds() = 0;
 
     virtual ~Inventory() {}
 };

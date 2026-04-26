@@ -1,0 +1,6 @@
+C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/AuraRetailOsCli.dir
+C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/AuraRetailOsGui.dir
+C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/AuraRetailOsGui_autogen_timestamp_deps.dir
+C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/AuraRetailOsGui_autogen.dir
