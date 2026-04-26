@@ -1,19 +1,22 @@
 #ifndef WALLETADAPTER_H
 #define WALLETADAPTER_H
 
-#include "payment/Payment.h"
 #include <string>
+#include "payment/Payment.h"
 
 class WalletAdapter : public Payment {
 private:
-    std::string user;
+    std::string userId;
+    double lastAmount;
 
 public:
-    WalletAdapter(const std::string& userName);
+    WalletAdapter(const std::string& uid);
 
     bool pay(double amount) override;
-    bool refund(const std::string& transactionId) override;
+    bool refund(const std::string& reason) override;
+
+    // 🔥 THIS WAS MISSING
     std::string getStatus() const override;
 };
 
-#endif  
+#endif

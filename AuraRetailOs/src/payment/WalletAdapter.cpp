@@ -1,18 +1,31 @@
 #include "payment/WalletAdapter.h"
+#include "payment/UserWallet.h"
 #include <iostream>
 
-WalletAdapter::WalletAdapter(const std::string& userName) : user(userName) {}
+WalletAdapter::WalletAdapter(const std::string& uid)
+    : userId(uid), lastAmount(0.0) {}
 
 bool WalletAdapter::pay(double amount) {
-    std::cout << "Payment of " << amount << " done using wallet for user: " << user << "\n";
+    lastAmount = amount;
+
+    bool ok = UserWallet::getInstance()->deduct(userId, amount);
+
+    if (ok)
+        std::cout << "[Wallet] Payment successful\n";
+    else
+        std::cout << "[Wallet] Insufficient balance\n";
+
+    return ok;
+}
+
+bool WalletAdapter::refund(const std::string& reason) {
+    UserWallet::getInstance()->topUp(userId, lastAmount);
+
+    std::cout << "[Wallet] Refund processed\n";
     return true;
 }
 
-bool WalletAdapter::refund(const std::string& transactionId) {
-    std::cout << "Refund processed for transaction: " << transactionId << "\n";
-    return true;
-}
-
+// 🔥 REQUIRED IMPLEMENTATION
 std::string WalletAdapter::getStatus() const {
-    return "Wallet:online";
+    return "Wallet payment processed";
 }

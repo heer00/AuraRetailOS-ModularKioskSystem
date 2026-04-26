@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "payment/CardAdapter.h"
 
 bool CardAdapter::pay(double amount) {

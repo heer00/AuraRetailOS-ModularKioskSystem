@@ -1,4 +1,4 @@
-  // include/persistence/TransactionLog.h
+// include/persistence/TransactionLog.h
   #ifndef TRANSACTIONLOG_H
   #define TRANSACTIONLOG_H
   

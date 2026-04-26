@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "payment/UPIAdapter.h"
 
 bool UPIAdapter::pay(double amount) {
