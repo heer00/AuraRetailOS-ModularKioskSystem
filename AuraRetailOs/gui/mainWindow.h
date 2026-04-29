@@ -9,7 +9,9 @@
 #include <QTextEdit>
 #include <QSpinBox>
 #include <QString>
+#include <QLabel>
 #include "core/Kiosk.h"
+#include "persistence/UserStore.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -28,12 +30,17 @@ private slots:
     void onBuyClicked();
     void onRefundClicked();
     void onRestockClicked();
+    void onViewStockClicked();
+    void onViewTransactionsClicked();
+    void onTopUpWalletClicked();
     void onBackToMainClicked();
+    void refreshWalletBalance();
 
 private:
     Ui::MainWindow *ui;
 
     Kiosk* kiosk;
+    UserStore* userStore;
     QString currentUserId;
     
     // UI Elements managed programmatically
@@ -48,6 +55,8 @@ private:
 
     // Customer View
     QWidget* customerWidget;
+    QLabel* walletBalanceLabel;
+    QPushButton* btnTopUpWallet;
     QComboBox* productDropdown;
     QPushButton* btnBuy;
     QLineEdit* transactionInput;
@@ -61,6 +70,8 @@ private:
     QLineEdit* restockProductIdInput;
     QSpinBox* restockQtyInput;
     QPushButton* btnRestock;
+    QPushButton* btnViewStock;
+    QPushButton* btnViewTransactions;
     QPushButton* btnAdminBack;
     QTextEdit* adminLogBox;
     

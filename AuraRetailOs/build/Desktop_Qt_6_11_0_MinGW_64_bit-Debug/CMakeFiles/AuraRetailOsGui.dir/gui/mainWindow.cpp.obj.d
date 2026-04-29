@@ -420,8 +420,13 @@ CMakeFiles/AuraRetailOsGui.dir/gui/mainWindow.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QSpinBox \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qspinbox.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/Kiosk.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/KioskInterface.h \
+ C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/persistence/UserStore.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/build/DESKTO~1/AURARE~1/include/ui_mainwindow.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QVariant \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
@@ -443,9 +448,6 @@ CMakeFiles/AuraRetailOsGui.dir/gui/mainWindow.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
@@ -462,7 +464,6 @@ CMakeFiles/AuraRetailOsGui.dir/gui/mainWindow.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtGui/QFont \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QInputDialog \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qinputdialog.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/KioskBuilder.h \
@@ -470,6 +471,7 @@ CMakeFiles/AuraRetailOsGui.dir/gui/mainWindow.cpp.obj: \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/factory/KioskFactory.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/payment/WalletAdapter.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/payment/Payment.h \
+ C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/payment/UserWallet.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/payment/UPIAdapter.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/payment/CardAdapter.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/inventory/Inventory.h \

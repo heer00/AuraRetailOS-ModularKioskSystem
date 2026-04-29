@@ -54,3 +54,15 @@ set_target_properties(AuraRetailOsCli PROPERTIES
     AUTORCC OFF
 )
 
+# Copy data directory to build output so the executable can find data/transactions.csv, data/users.json, etc.
+add_custom_command(TARGET AuraRetailOsGui POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${CMAKE_CURRENT_SOURCE_DIR}/data
+        $<TARGET_FILE_DIR:AuraRetailOsGui>/data
+)
+
+add_custom_command(TARGET AuraRetailOsCli POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${CMAKE_CURRENT_SOURCE_DIR}/data
+        $<TARGET_FILE_DIR:AuraRetailOsCli>/data
+)

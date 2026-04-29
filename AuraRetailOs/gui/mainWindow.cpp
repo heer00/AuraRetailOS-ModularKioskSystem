@@ -11,8 +11,8 @@
 // include your builder
 #include "core/KioskBuilder.h"
 #include "factory/KioskFactorySimple.h"
-#include "factory/KioskFactory.h"
 #include "payment/WalletAdapter.h"
+#include "payment/UserWallet.h"
 #include "payment/UPIAdapter.h"
 #include "payment/CardAdapter.h"
 #include "inventory/Inventory.h"
@@ -32,6 +32,9 @@ MainWindow::MainWindow(QWidget *parent)
     ConfigStore config("data/config.json");
     config.load();
 
+    userStore = new UserStore("data/users.json");
+    userStore->load();
+
     kiosk = nullptr;
     
     // We are discarding the .ui layout to implement the new UI programmatically
@@ -47,6 +50,10 @@ MainWindow::~MainWindow() {
     delete ui;
     if (kiosk) {
         delete kiosk;
+    }
+    if (userStore) {
+        userStore->save();
+        delete userStore;
     }
 }
 
@@ -101,6 +108,13 @@ void MainWindow::setupProgrammaticUI() {
     custTitle->setFont(titleFont);
     custTitle->setAlignment(Qt::AlignCenter);
 
+    // Wallet section
+    QHBoxLayout* walletLayout = new QHBoxLayout();
+    walletBalanceLabel = new QLabel("Wallet Balance: Rs. 0.00");
+    btnTopUpWallet = new QPushButton("Top Up Wallet");
+    walletLayout->addWidget(walletBalanceLabel);
+    walletLayout->addWidget(btnTopUpWallet);
+
     // Buy section
     QHBoxLayout* buyLayout = new QHBoxLayout();
     productDropdown = new QComboBox();
@@ -132,6 +146,7 @@ void MainWindow::setupProgrammaticUI() {
     btnCustBack = new QPushButton("Logout (Back to Main Menu)");
 
     custLayout->addWidget(custTitle);
+    custLayout->addLayout(walletLayout);
     custLayout->addLayout(buyLayout);
     custLayout->addLayout(refundLayout);
     custLayout->addWidget(custLogBox);
@@ -170,6 +185,14 @@ void MainWindow::setupProgrammaticUI() {
 
     adminLayout->addWidget(adminTitle);
     adminLayout->addLayout(restockLayout);
+
+    QHBoxLayout* adminActionsLayout = new QHBoxLayout();
+    btnViewStock = new QPushButton("View Stock");
+    btnViewTransactions = new QPushButton("View Transactions Log");
+    adminActionsLayout->addWidget(btnViewStock);
+    adminActionsLayout->addWidget(btnViewTransactions);
+    adminLayout->addLayout(adminActionsLayout);
+
     adminLayout->addWidget(adminLogBox);
     adminLayout->addWidget(btnAdminBack);
 
@@ -186,6 +209,9 @@ void MainWindow::setupProgrammaticUI() {
     connect(btnBuy, &QPushButton::clicked, this, &MainWindow::onBuyClicked);
     connect(btnRefund, &QPushButton::clicked, this, &MainWindow::onRefundClicked);
     connect(btnRestock, &QPushButton::clicked, this, &MainWindow::onRestockClicked);
+    connect(btnViewStock, &QPushButton::clicked, this, &MainWindow::onViewStockClicked);
+    connect(btnViewTransactions, &QPushButton::clicked, this, &MainWindow::onViewTransactionsClicked);
+    connect(btnTopUpWallet, &QPushButton::clicked, this, &MainWindow::onTopUpWalletClicked);
     connect(btnCustBack, &QPushButton::clicked, this, &MainWindow::onBackToMainClicked);
     connect(btnAdminBack, &QPushButton::clicked, this, &MainWindow::onBackToMainClicked);
 }
@@ -195,6 +221,11 @@ void MainWindow::onRoleCustomerClicked() {
     if (currentUserId.isEmpty()) {
         QMessageBox::warning(this, "Input Error", "Please enter your Customer ID.");
         return;
+    }
+
+    if (!userStore->exists(currentUserId.toStdString())) {
+        userStore->registerUser(currentUserId.toStdString(), "1234", 0.0);
+        userStore->save();
     }
     
     // Dynamically build kiosk based on selection
@@ -221,6 +252,8 @@ void MainWindow::onRoleCustomerClicked() {
     mainStack->setCurrentIndex(1); // Go to Customer Page
     custLogBox->append(QString("<span style=\"color:#888888;\">[%1]</span> Logged in as Customer: %2")
         .arg(QDateTime::currentDateTime().toString("hh:mm:ss"), currentUserId));
+    
+    refreshWalletBalance();
 }
 
 void MainWindow::onRoleAdminClicked() {
@@ -295,10 +328,16 @@ void MainWindow::onBuyClicked() {
     QString status = (logResult.find("SUCCESS") != std::string::npos) ? "SUCCESS" : "FAILED";
 
     QString logMsg = QString("<span style=\"color:#888888;\">[%1]</span> "
-                             "<span style=\"color:%2; font-weight:bold;\">%3</span>: %4")
+                             "<span style=\"color:%2; font-weight:bold;\">%3</span>: %4 "
+                             "<br/><span style=\"color:#ffeb3b; font-size:10px;\">[Patterns: Command, Strategy, Adapter]</span>")
                          .arg(timeStr, color, status, QString::fromStdString(logResult));
 
     custLogBox->append(logMsg);
+    
+    if (method == "Wallet") {
+        userStore->save();
+        refreshWalletBalance();
+    }
 }
 
 void MainWindow::onRefundClicked() {
@@ -321,12 +360,16 @@ void MainWindow::onRefundClicked() {
     QString status = (logResult.find("REFUNDED") != std::string::npos) ? "REFUND" : "FAILED";
 
     QString logMsg = QString("<span style=\"color:#888888;\">[%1]</span> "
-                             "<span style=\"color:%2; font-weight:bold;\">%3</span>: %4")
+                             "<span style=\"color:%2; font-weight:bold;\">%3</span>: %4 "
+                             "<br/><span style=\"color:#ffeb3b; font-size:10px;\">[Patterns: Command, Adapter]</span>")
                          .arg(timeStr, color, status, QString::fromStdString(logResult));
 
     custLogBox->append(logMsg);
     transactionInput->clear();
     refundProductIdInput->clear();
+    
+    userStore->save();
+    refreshWalletBalance();
 }
 
 void MainWindow::onRestockClicked() {
@@ -350,10 +393,55 @@ void MainWindow::onRestockClicked() {
     QString status = (logResult.find("RESTOCK") != std::string::npos) ? "RESTOCK" : "FAILED";
 
     QString logMsg = QString("<span style=\"color:#888888;\">[%1]</span> "
-                             "<span style=\"color:%2; font-weight:bold;\">%3</span>: %4")
+                             "<span style=\"color:%2; font-weight:bold;\">%3</span>: %4 "
+                             "<br/><span style=\"color:#ffeb3b; font-size:10px;\">[Patterns: Command, Proxy]</span>")
                          .arg(timeStr, color, status, QString::fromStdString(logResult));
 
     adminLogBox->append(logMsg);
     restockProductIdInput->clear();
     restockQtyInput->setValue(1);
+}
+
+void MainWindow::onViewStockClicked() {
+    if (!kiosk || !kiosk->getInventory()) return;
+    adminLogBox->append(QString("<br/><span style=\"color:#2196f3; font-weight:bold;\">--- Current Stock Status ---</span>"));
+    std::vector<std::string> products = kiosk->getInventory()->getAllProductIds();
+    for (const auto& p : products) {
+        int stock = kiosk->getInventory()->getStock(p);
+        QString line = QString("Product ID: <b>%1</b> | Stock: <b>%2</b>")
+                           .arg(QString::fromStdString(p)).arg(stock);
+        adminLogBox->append(line);
+    }
+}
+
+void MainWindow::onViewTransactionsClicked() {
+    adminLogBox->append(QString("<br/><span style=\"color:#ff9800; font-weight:bold;\">--- Transaction Log (data/transactions.csv) ---</span>"));
+    TransactionLog txLog("data/transactions.csv");
+    auto lines = txLog.readAll();
+    if (lines.empty()) {
+        adminLogBox->append("<i>No transactions found or unable to read file.</i>");
+    } else {
+        for (const auto& l : lines) {
+            adminLogBox->append(QString::fromStdString(l));
+        }
+    }
+}
+
+void MainWindow::refreshWalletBalance() {
+    if (currentUserId.isEmpty()) return;
+    double bal = UserWallet::getInstance()->getBalance(currentUserId.toStdString());
+    walletBalanceLabel->setText(QString("Wallet Balance: Rs. %1").arg(bal, 0, 'f', 2));
+}
+
+void MainWindow::onTopUpWalletClicked() {
+    bool ok;
+    double amount = QInputDialog::getDouble(this, "Top Up Wallet", 
+                                            "Enter amount to add:", 
+                                            100.00, 1.00, 10000.00, 2, &ok);
+    if (ok && amount > 0) {
+        UserWallet::getInstance()->topUp(currentUserId.toStdString(), amount, true);
+        userStore->save();
+        refreshWalletBalance();
+        custLogBox->append(QString("<span style=\"color:#4caf50;\">[Wallet] Added Rs. %1 to wallet.</span>").arg(amount));
+    }
 }

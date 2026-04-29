@@ -433,5 +433,10 @@ CMakeFiles/AuraRetailOsGui.dir/gui/main.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QSpinBox \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qspinbox.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/Kiosk.h \
- C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/KioskInterface.h
+ C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/KioskInterface.h \
+ C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/persistence/UserStore.h

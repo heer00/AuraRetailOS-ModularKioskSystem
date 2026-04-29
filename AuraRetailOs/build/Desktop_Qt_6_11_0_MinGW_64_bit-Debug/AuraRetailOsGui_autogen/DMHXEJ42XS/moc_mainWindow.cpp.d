@@ -53,6 +53,7 @@ C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem
   C:/Qt/6.11.0/mingw_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qhashfunctions.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterator.h \
@@ -148,6 +149,7 @@ C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpalette.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
+  C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpolygon.h \
@@ -166,6 +168,7 @@ C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
@@ -179,6 +182,7 @@ C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qcombobox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
@@ -410,4 +414,5 @@ C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/include/core/Kiosk.h \
-  C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/include/core/KioskInterface.h
+  C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/include/core/KioskInterface.h \
+  C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/include/persistence/UserStore.h
