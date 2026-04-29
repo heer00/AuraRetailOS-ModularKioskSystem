@@ -121,9 +121,14 @@ void MainWindow::setupProgrammaticUI() {
     
     // Populated dynamically on login
     
+    buyQtyInput = new QSpinBox();
+    buyQtyInput->setRange(1, 100);
+
     btnBuy = new QPushButton("Buy Item");
     buyLayout->addWidget(new QLabel("Select Product:"));
     buyLayout->addWidget(productDropdown);
+    buyLayout->addWidget(new QLabel("Qty:"));
+    buyLayout->addWidget(buyQtyInput);
     buyLayout->addWidget(btnBuy);
 
     // Refund section
@@ -229,18 +234,19 @@ void MainWindow::onRoleCustomerClicked() {
     }
     
     // Dynamically build kiosk based on selection
-    if (kiosk) {
-        delete kiosk;
-    }
     QString type = kioskTypeDropdown->currentText();
-    KioskFactory* factory = KioskFactorySimple::createFactory(type.toStdString());
-    kiosk = KioskBuilder()
-        .addDispenser(factory->createDispenser())
-        .addPayment(factory->createPayment())
-        .addInventory(factory->createInventory())
-        .addPricingPolicy(factory->createPricingPolicy())
-        .build();
-    delete factory;
+    if (!kiosk || type != lastKioskType) {
+        if (kiosk) delete kiosk;
+        KioskFactory* factory = KioskFactorySimple::createFactory(type.toStdString());
+        kiosk = KioskBuilder()
+            .addDispenser(factory->createDispenser())
+            .addPayment(factory->createPayment())
+            .addInventory(factory->createInventory())
+            .addPricingPolicy(factory->createPricingPolicy())
+            .build();
+        delete factory;
+        lastKioskType = type;
+    }
     
     // Refresh product list in case it changed
     productDropdown->clear();
@@ -264,18 +270,19 @@ void MainWindow::onRoleAdminClicked() {
     }
 
     // Dynamically build kiosk based on selection
-    if (kiosk) {
-        delete kiosk;
-    }
     QString type = kioskTypeDropdown->currentText();
-    KioskFactory* factory = KioskFactorySimple::createFactory(type.toStdString());
-    kiosk = KioskBuilder()
-        .addDispenser(factory->createDispenser())
-        .addPayment(factory->createPayment())
-        .addInventory(factory->createInventory())
-        .addPricingPolicy(factory->createPricingPolicy())
-        .build();
-    delete factory;
+    if (!kiosk || type != lastKioskType) {
+        if (kiosk) delete kiosk;
+        KioskFactory* factory = KioskFactorySimple::createFactory(type.toStdString());
+        kiosk = KioskBuilder()
+            .addDispenser(factory->createDispenser())
+            .addPayment(factory->createPayment())
+            .addInventory(factory->createInventory())
+            .addPricingPolicy(factory->createPricingPolicy())
+            .build();
+        delete factory;
+        lastKioskType = type;
+    }
 
     mainStack->setCurrentIndex(2); // Go to Admin Page
     adminLogBox->append(QString("<span style=\"color:#888888;\">[%1]</span> Logged in as Admin: %2")
@@ -291,6 +298,7 @@ void MainWindow::onBackToMainClicked() {
 void MainWindow::onBuyClicked() {
     QString product = productDropdown->currentText();
     if (product.isEmpty()) return;
+    int qty = buyQtyInput->value();
 
     // Ask for payment method
     QStringList paymentMethods;
@@ -303,36 +311,49 @@ void MainWindow::onBuyClicked() {
     if (method == "Wallet") {
         kiosk->setPayment(new WalletAdapter(currentUserId.toStdString()));
     } else if (method == "UPI") {
-        QString mobile = QInputDialog::getText(this, "UPI Payment", "Enter mobile number for UPI:", QLineEdit::Normal, "", &ok);
-        if (!ok || mobile.isEmpty()) return;
+        QString mobile = QInputDialog::getText(this, "UPI Payment", "Enter mobile number for UPI (10 digits):", QLineEdit::Normal, "", &ok);
+        bool isNum = false;
+        mobile.toULongLong(&isNum);
+        if (!ok || mobile.length() != 10 || !isNum) {
+            QMessageBox::warning(this, "Validation Error", "Mobile number must be exactly 10 digits.");
+            return;
+        }
         kiosk->setPayment(new UPIAdapter());
     } else if (method == "Card") {
         QString cardLast4 = QInputDialog::getText(this, "Card Payment", "Enter card last 4 digits:", QLineEdit::Normal, "", &ok);
-        if (!ok || cardLast4.isEmpty()) return;
+        bool isNum = false;
+        cardLast4.toInt(&isNum);
+        if (!ok || cardLast4.length() != 4 || !isNum) {
+            QMessageBox::warning(this, "Validation Error", "Card pin must be exactly 4 digits.");
+            return;
+        }
         kiosk->setPayment(new CardAdapter());
     }
 
-    PurchaseItemCommand cmd(product.toStdString(),
-                            kiosk->getInventory(),
-                            kiosk->getPayment(),
-                            kiosk->getDispenser(),
-                            kiosk->getPricingPolicy());
-    cmd.execute();
-    
-    std::string logResult = cmd.getLog();
-    TransactionLog txLog("data/transactions.csv");
-    txLog.append(logResult);
+    for (int i = 0; i < qty; ++i) {
+        PurchaseItemCommand cmd(product.toStdString(),
+                                kiosk->getInventory(),
+                                kiosk->getPayment(),
+                                kiosk->getDispenser(),
+                                kiosk->getPricingPolicy());
+        cmd.execute();
+        
+        std::string logResult = cmd.getLog();
+        logResult = "[User: " + currentUserId.toStdString() + "] " + logResult;
+        TransactionLog txLog("data/transactions.csv");
+        txLog.append(logResult);
 
-    QString timeStr = QDateTime::currentDateTime().toString("hh:mm:ss");
-    QString color = (logResult.find("SUCCESS") != std::string::npos) ? "#4caf50" : "#f44336";
-    QString status = (logResult.find("SUCCESS") != std::string::npos) ? "SUCCESS" : "FAILED";
+        QString timeStr = QDateTime::currentDateTime().toString("hh:mm:ss");
+        QString color = (logResult.find("SUCCESS") != std::string::npos) ? "#4caf50" : "#f44336";
+        QString status = (logResult.find("SUCCESS") != std::string::npos) ? "SUCCESS" : "FAILED";
 
-    QString logMsg = QString("<span style=\"color:#888888;\">[%1]</span> "
-                             "<span style=\"color:%2; font-weight:bold;\">%3</span>: %4 "
-                             "<br/><span style=\"color:#ffeb3b; font-size:10px;\">[Patterns: Command, Strategy, Adapter]</span>")
-                         .arg(timeStr, color, status, QString::fromStdString(logResult));
+        QString logMsg = QString("<span style=\"color:#888888;\">[%1]</span> "
+                                 "<span style=\"color:%2; font-weight:bold;\">%3</span>: %4 "
+                                 "<br/><span style=\"color:#ffeb3b; font-size:10px;\">[Patterns: Command, Strategy, Adapter]</span>")
+                             .arg(timeStr, color, status, QString::fromStdString(logResult));
 
-    custLogBox->append(logMsg);
+        custLogBox->append(logMsg);
+    }
     
     if (method == "Wallet") {
         userStore->save();
@@ -345,6 +366,23 @@ void MainWindow::onRefundClicked() {
     QString pid = refundProductIdInput->text().trimmed();
     if (txn.isEmpty() || pid.isEmpty()) {
         QMessageBox::warning(this, "Input Error", "Please enter both Transaction ID and Product ID.");
+        return;
+    }
+
+    // Check if user has made any purchases first
+    TransactionLog txLogCheck("data/transactions.csv");
+    auto lines = txLogCheck.readAll();
+    bool userPurchased = false;
+    for (const auto& l : lines) {
+        if (l.find("[User: " + currentUserId.toStdString() + "]") != std::string::npos && 
+            l.find("SUCCESS") != std::string::npos) {
+            userPurchased = true;
+            break;
+        }
+    }
+    
+    if (!userPurchased) {
+        QMessageBox::warning(this, "Refund Error", "Nothing to refund, please buy something first.");
         return;
     }
 
@@ -439,9 +477,32 @@ void MainWindow::onTopUpWalletClicked() {
                                             "Enter amount to add:", 
                                             100.00, 1.00, 10000.00, 2, &ok);
     if (ok && amount > 0) {
+        QStringList methods;
+        methods << "UPI" << "Card";
+        QString method = QInputDialog::getItem(this, "Top Up Method", "Select payment method:", methods, 0, false, &ok);
+        if (!ok || method.isEmpty()) return;
+
+        if (method == "UPI") {
+            QString mobile = QInputDialog::getText(this, "UPI Payment", "Enter mobile number for UPI (10 digits):", QLineEdit::Normal, "", &ok);
+            bool isNum = false;
+            mobile.toULongLong(&isNum);
+            if (!ok || mobile.length() != 10 || !isNum) {
+                QMessageBox::warning(this, "Validation Error", "Mobile number must be exactly 10 digits.");
+                return;
+            }
+        } else if (method == "Card") {
+            QString cardLast4 = QInputDialog::getText(this, "Card Payment", "Enter card last 4 digits:", QLineEdit::Normal, "", &ok);
+            bool isNum = false;
+            cardLast4.toInt(&isNum);
+            if (!ok || cardLast4.length() != 4 || !isNum) {
+                QMessageBox::warning(this, "Validation Error", "Card pin must be exactly 4 digits.");
+                return;
+            }
+        }
+
         UserWallet::getInstance()->topUp(currentUserId.toStdString(), amount, true);
         userStore->save();
         refreshWalletBalance();
-        custLogBox->append(QString("<span style=\"color:#4caf50;\">[Wallet] Added Rs. %1 to wallet.</span>").arg(amount));
+        custLogBox->append(QString("<span style=\"color:#4caf50;\">[Wallet] Added Rs. %1 to wallet via %2.</span>").arg(amount).arg(method));
     }
 }

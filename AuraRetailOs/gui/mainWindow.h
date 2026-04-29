@@ -42,6 +42,7 @@ private:
     Kiosk* kiosk;
     UserStore* userStore;
     QString currentUserId;
+    QString lastKioskType;
     
     // UI Elements managed programmatically
     QStackedWidget* mainStack;
@@ -58,6 +59,7 @@ private:
     QLabel* walletBalanceLabel;
     QPushButton* btnTopUpWallet;
     QComboBox* productDropdown;
+    QSpinBox* buyQtyInput;
     QPushButton* btnBuy;
     QLineEdit* transactionInput;
     QLineEdit* refundProductIdInput;
