@@ -29,7 +29,10 @@ set(GUI_SOURCES
     gui/mainWindow.cpp
     gui/mainWindow.h
     gui/mainWindow.ui
+    gui/diagnosisdialog.cpp
+    gui/diagnosisdialog.h
 )
+
 
 # 1. Create the CLI Executable
 add_executable(AuraRetailOsCli

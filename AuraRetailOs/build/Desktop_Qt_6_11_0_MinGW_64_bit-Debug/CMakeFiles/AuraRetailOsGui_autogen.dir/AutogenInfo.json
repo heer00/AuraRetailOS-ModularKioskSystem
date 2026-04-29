@@ -334,6 +334,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/gui/diagnosisdialog.h",
+			"MU",
+			"DMHXEJ42XS/moc_diagnosisdialog.cpp",
+			null
+		],
+		[
 			"C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/gui/mainWindow.h",
 			"MU",
 			"DMHXEJ42XS/moc_mainWindow.cpp",
@@ -428,6 +434,11 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/gui/diagnosisdialog.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/gui/main.cpp",
 			"MU",
 			null
@@ -464,6 +475,11 @@
 		],
 		[
 			"C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/core/KioskBuilder.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/core/diagnosisservice.cpp",
 			"MU",
 			null
 		],

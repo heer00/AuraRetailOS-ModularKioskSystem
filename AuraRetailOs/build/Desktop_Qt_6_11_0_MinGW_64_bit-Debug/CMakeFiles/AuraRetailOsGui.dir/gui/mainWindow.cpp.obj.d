@@ -466,6 +466,9 @@ CMakeFiles/AuraRetailOsGui.dir/gui/mainWindow.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QInputDialog \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qinputdialog.h \
+ C:\Users\kbs38\Desktop\Desktop\ Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\gui\diagnosisdialog.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+ C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/diagnosisservice.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/KioskBuilder.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/factory/KioskFactorySimple.h \
  C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/factory/KioskFactory.h \

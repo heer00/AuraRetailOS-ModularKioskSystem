@@ -1,9 +1,9 @@
 CMakeFiles/AuraRetailOsGui.dir/AuraRetailOsGui_autogen/mocs_compilation.cpp.obj: \
  C:\Users\kbs38\Desktop\Desktop\ Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AuraRetailOsGui_autogen\mocs_compilation.cpp \
- C:\Users\kbs38\Desktop\Desktop\ Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AuraRetailOsGui_autogen\DMHXEJ42XS/moc_mainWindow.cpp \
- C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/gui/mainWindow.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+ C:\Users\kbs38\Desktop\Desktop\ Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AuraRetailOsGui_autogen\DMHXEJ42XS/moc_diagnosisdialog.cpp \
+ C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/gui/diagnosisdialog.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qglobal.h \
@@ -386,10 +386,33 @@ CMakeFiles/AuraRetailOsGui.dir/AuraRetailOsGui_autogen/mocs_compilation.cpp.obj:
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qurl.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/diagnosisservice.h \
+ C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/Kiosk.h \
+ C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/KioskInterface.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
+ C:\Users\kbs38\Desktop\Desktop\ Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AuraRetailOsGui_autogen\DMHXEJ42XS/moc_mainWindow.cpp \
+ C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/gui/mainWindow.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QStackedWidget \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qstackedwidget.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qcombobox.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -404,30 +427,12 @@ CMakeFiles/AuraRetailOsGui.dir/AuraRetailOsGui_autogen/mocs_compilation.cpp.obj:
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qurl.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QSpinBox \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qspinbox.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
- C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
- C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/Kiosk.h \
- C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/core/KioskInterface.h \
- C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/persistence/UserStore.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h
+ C:/Users/kbs38/Desktop/DESKTO~1/College/DA/AURARE~1/AURARE~1/include/persistence/UserStore.h

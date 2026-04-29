@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/AuraRetailOsCli.dir/src/core/Kiosk.cpp.obj.d"
   "CMakeFiles/AuraRetailOsCli.dir/src/core/KioskBuilder.cpp.obj"
   "CMakeFiles/AuraRetailOsCli.dir/src/core/KioskBuilder.cpp.obj.d"
+  "CMakeFiles/AuraRetailOsCli.dir/src/core/diagnosisservice.cpp.obj"
+  "CMakeFiles/AuraRetailOsCli.dir/src/core/diagnosisservice.cpp.obj.d"
   "CMakeFiles/AuraRetailOsCli.dir/src/factory/EmergencyFactory.cpp.obj"
   "CMakeFiles/AuraRetailOsCli.dir/src/factory/EmergencyFactory.cpp.obj.d"
   "CMakeFiles/AuraRetailOsCli.dir/src/factory/FoodFactory.cpp.obj"

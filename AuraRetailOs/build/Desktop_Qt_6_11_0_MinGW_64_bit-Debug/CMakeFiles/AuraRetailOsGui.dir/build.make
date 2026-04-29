@@ -120,11 +120,26 @@ CMakeFiles/AuraRetailOsGui.dir/gui/mainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AuraRetailOsGui.dir/gui/mainWindow.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\gui\mainWindow.cpp" -o CMakeFiles\AuraRetailOsGui.dir\gui\mainWindow.cpp.s
 
+CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/flags.make
+CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
+CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/gui/diagnosisdialog.cpp
+CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\gui\diagnosisdialog.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\gui\diagnosisdialog.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\gui\diagnosisdialog.cpp"
+
+CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\gui\diagnosisdialog.cpp" > CMakeFiles\AuraRetailOsGui.dir\gui\diagnosisdialog.cpp.i
+
+CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\gui\diagnosisdialog.cpp" -o CMakeFiles\AuraRetailOsGui.dir\gui\diagnosisdialog.cpp.s
+
 CMakeFiles/AuraRetailOsGui.dir/src/command/PurchaseItemCommand.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/flags.make
 CMakeFiles/AuraRetailOsGui.dir/src/command/PurchaseItemCommand.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/command/PurchaseItemCommand.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/command/PurchaseItemCommand.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/command/PurchaseItemCommand.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/command/PurchaseItemCommand.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/command/PurchaseItemCommand.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/command/PurchaseItemCommand.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\command\PurchaseItemCommand.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\command\PurchaseItemCommand.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\command\PurchaseItemCommand.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/command/PurchaseItemCommand.cpp.i: cmake_force
@@ -139,7 +154,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/command/RefundCommand.cpp.obj: CMakeFiles/Aur
 CMakeFiles/AuraRetailOsGui.dir/src/command/RefundCommand.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/command/RefundCommand.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/command/RefundCommand.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/command/RefundCommand.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/command/RefundCommand.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/command/RefundCommand.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/command/RefundCommand.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\command\RefundCommand.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\command\RefundCommand.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\command\RefundCommand.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/command/RefundCommand.cpp.i: cmake_force
@@ -154,7 +169,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/command/RestockCommand.cpp.obj: CMakeFiles/Au
 CMakeFiles/AuraRetailOsGui.dir/src/command/RestockCommand.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/command/RestockCommand.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/command/RestockCommand.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/command/RestockCommand.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/command/RestockCommand.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/command/RestockCommand.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/command/RestockCommand.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\command\RestockCommand.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\command\RestockCommand.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\command\RestockCommand.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/command/RestockCommand.cpp.i: cmake_force
@@ -169,7 +184,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/core/CentralRegistry.cpp.obj: CMakeFiles/Aura
 CMakeFiles/AuraRetailOsGui.dir/src/core/CentralRegistry.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/core/CentralRegistry.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/core/CentralRegistry.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/core/CentralRegistry.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/core/CentralRegistry.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/core/CentralRegistry.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/core/CentralRegistry.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\core\CentralRegistry.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\core\CentralRegistry.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\core\CentralRegistry.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/core/CentralRegistry.cpp.i: cmake_force
@@ -184,7 +199,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/core/Kiosk.cpp.obj: CMakeFiles/AuraRetailOsGu
 CMakeFiles/AuraRetailOsGui.dir/src/core/Kiosk.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/core/Kiosk.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/core/Kiosk.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/core/Kiosk.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/core/Kiosk.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/core/Kiosk.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/core/Kiosk.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\core\Kiosk.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\core\Kiosk.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\core\Kiosk.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/core/Kiosk.cpp.i: cmake_force
@@ -199,7 +214,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.obj: CMakeFiles/AuraRet
 CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/core/KioskBuilder.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\core\KioskBuilder.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\core\KioskBuilder.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\core\KioskBuilder.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.i: cmake_force
@@ -210,11 +225,26 @@ CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\core\KioskBuilder.cpp" -o CMakeFiles\AuraRetailOsGui.dir\src\core\KioskBuilder.cpp.s
 
+CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/flags.make
+CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
+CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/core/diagnosisservice.cpp
+CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\core\diagnosisservice.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\core\diagnosisservice.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\core\diagnosisservice.cpp"
+
+CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\core\diagnosisservice.cpp" > CMakeFiles\AuraRetailOsGui.dir\src\core\diagnosisservice.cpp.i
+
+CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\core\diagnosisservice.cpp" -o CMakeFiles\AuraRetailOsGui.dir\src\core\diagnosisservice.cpp.s
+
 CMakeFiles/AuraRetailOsGui.dir/src/factory/EmergencyFactory.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/flags.make
 CMakeFiles/AuraRetailOsGui.dir/src/factory/EmergencyFactory.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/factory/EmergencyFactory.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/factory/EmergencyFactory.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/factory/EmergencyFactory.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/factory/EmergencyFactory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/factory/EmergencyFactory.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/factory/EmergencyFactory.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\factory\EmergencyFactory.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\factory\EmergencyFactory.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\factory\EmergencyFactory.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/factory/EmergencyFactory.cpp.i: cmake_force
@@ -229,7 +259,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/factory/FoodFactory.cpp.obj: CMakeFiles/AuraR
 CMakeFiles/AuraRetailOsGui.dir/src/factory/FoodFactory.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/factory/FoodFactory.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/factory/FoodFactory.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/factory/FoodFactory.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/factory/FoodFactory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/factory/FoodFactory.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/factory/FoodFactory.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\factory\FoodFactory.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\factory\FoodFactory.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\factory\FoodFactory.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/factory/FoodFactory.cpp.i: cmake_force
@@ -244,7 +274,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/factory/KioskFactorySimple.cpp.obj: CMakeFile
 CMakeFiles/AuraRetailOsGui.dir/src/factory/KioskFactorySimple.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/factory/KioskFactorySimple.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/factory/KioskFactorySimple.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/factory/KioskFactorySimple.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/factory/KioskFactorySimple.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/factory/KioskFactorySimple.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/factory/KioskFactorySimple.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\factory\KioskFactorySimple.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\factory\KioskFactorySimple.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\factory\KioskFactorySimple.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/factory/KioskFactorySimple.cpp.i: cmake_force
@@ -259,7 +289,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/factory/PharmacyFactory.cpp.obj: CMakeFiles/A
 CMakeFiles/AuraRetailOsGui.dir/src/factory/PharmacyFactory.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/factory/PharmacyFactory.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/factory/PharmacyFactory.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/factory/PharmacyFactory.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/factory/PharmacyFactory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/factory/PharmacyFactory.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/factory/PharmacyFactory.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\factory\PharmacyFactory.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\factory\PharmacyFactory.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\factory\PharmacyFactory.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/factory/PharmacyFactory.cpp.i: cmake_force
@@ -274,7 +304,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/hardware/ConveyorDispenser.cpp.obj: CMakeFile
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/ConveyorDispenser.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/ConveyorDispenser.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/hardware/ConveyorDispenser.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/ConveyorDispenser.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/ConveyorDispenser.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/ConveyorDispenser.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/hardware/ConveyorDispenser.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\hardware\ConveyorDispenser.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\hardware\ConveyorDispenser.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\hardware\ConveyorDispenser.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/ConveyorDispenser.cpp.i: cmake_force
@@ -289,7 +319,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/hardware/NetworkModule.cpp.obj: CMakeFiles/Au
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/NetworkModule.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/NetworkModule.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/hardware/NetworkModule.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/NetworkModule.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/NetworkModule.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/NetworkModule.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/hardware/NetworkModule.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\hardware\NetworkModule.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\hardware\NetworkModule.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\hardware\NetworkModule.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/NetworkModule.cpp.i: cmake_force
@@ -304,7 +334,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/hardware/RefrigerationModule.cpp.obj: CMakeFi
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/RefrigerationModule.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/RefrigerationModule.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/hardware/RefrigerationModule.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/RefrigerationModule.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/RefrigerationModule.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/RefrigerationModule.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/hardware/RefrigerationModule.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\hardware\RefrigerationModule.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\hardware\RefrigerationModule.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\hardware\RefrigerationModule.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/RefrigerationModule.cpp.i: cmake_force
@@ -319,7 +349,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/hardware/RoboticArmDispenser.cpp.obj: CMakeFi
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/RoboticArmDispenser.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/RoboticArmDispenser.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/hardware/RoboticArmDispenser.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/RoboticArmDispenser.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/RoboticArmDispenser.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/RoboticArmDispenser.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/hardware/RoboticArmDispenser.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\hardware\RoboticArmDispenser.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\hardware\RoboticArmDispenser.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\hardware\RoboticArmDispenser.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/RoboticArmDispenser.cpp.i: cmake_force
@@ -334,7 +364,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/hardware/SolarModule.cpp.obj: CMakeFiles/Aura
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/SolarModule.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/SolarModule.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/hardware/SolarModule.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/SolarModule.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/SolarModule.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/SolarModule.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/hardware/SolarModule.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\hardware\SolarModule.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\hardware\SolarModule.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\hardware\SolarModule.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/SolarModule.cpp.i: cmake_force
@@ -349,7 +379,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/hardware/SpiralDispenser.cpp.obj: CMakeFiles/
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/SpiralDispenser.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/SpiralDispenser.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/hardware/SpiralDispenser.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/SpiralDispenser.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/SpiralDispenser.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/hardware/SpiralDispenser.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/hardware/SpiralDispenser.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\hardware\SpiralDispenser.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\hardware\SpiralDispenser.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\hardware\SpiralDispenser.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/hardware/SpiralDispenser.cpp.i: cmake_force
@@ -364,7 +394,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/inventory/Bundle.cpp.obj: CMakeFiles/AuraReta
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/Bundle.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/Bundle.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/inventory/Bundle.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/Bundle.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/inventory/Bundle.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/inventory/Bundle.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/inventory/Bundle.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\inventory\Bundle.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\inventory\Bundle.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\inventory\Bundle.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/Bundle.cpp.i: cmake_force
@@ -379,7 +409,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/inventory/InventoryProxy.cpp.obj: CMakeFiles/
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/InventoryProxy.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/InventoryProxy.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/inventory/InventoryProxy.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/InventoryProxy.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/inventory/InventoryProxy.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/inventory/InventoryProxy.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/inventory/InventoryProxy.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\inventory\InventoryProxy.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\inventory\InventoryProxy.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\inventory\InventoryProxy.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/InventoryProxy.cpp.i: cmake_force
@@ -394,7 +424,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/inventory/Product.cpp.obj: CMakeFiles/AuraRet
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/Product.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/Product.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/inventory/Product.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/Product.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/inventory/Product.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/inventory/Product.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/inventory/Product.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\inventory\Product.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\inventory\Product.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\inventory\Product.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/Product.cpp.i: cmake_force
@@ -409,7 +439,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/inventory/RealInventory.cpp.obj: CMakeFiles/A
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/RealInventory.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/RealInventory.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/inventory/RealInventory.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/RealInventory.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/inventory/RealInventory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/inventory/RealInventory.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/inventory/RealInventory.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\inventory\RealInventory.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\inventory\RealInventory.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\inventory\RealInventory.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/inventory/RealInventory.cpp.i: cmake_force
@@ -424,7 +454,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/payment/CardAdapter.cpp.obj: CMakeFiles/AuraR
 CMakeFiles/AuraRetailOsGui.dir/src/payment/CardAdapter.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/payment/CardAdapter.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/payment/CardAdapter.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/payment/CardAdapter.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/payment/CardAdapter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/payment/CardAdapter.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/payment/CardAdapter.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\payment\CardAdapter.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\payment\CardAdapter.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\payment\CardAdapter.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/payment/CardAdapter.cpp.i: cmake_force
@@ -439,7 +469,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/payment/PaymentPool.cpp.obj: CMakeFiles/AuraR
 CMakeFiles/AuraRetailOsGui.dir/src/payment/PaymentPool.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/payment/PaymentPool.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/payment/PaymentPool.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/payment/PaymentPool.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/payment/PaymentPool.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/payment/PaymentPool.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/payment/PaymentPool.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\payment\PaymentPool.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\payment\PaymentPool.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\payment\PaymentPool.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/payment/PaymentPool.cpp.i: cmake_force
@@ -454,7 +484,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/payment/UPIAdapter.cpp.obj: CMakeFiles/AuraRe
 CMakeFiles/AuraRetailOsGui.dir/src/payment/UPIAdapter.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/payment/UPIAdapter.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/payment/UPIAdapter.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/payment/UPIAdapter.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/payment/UPIAdapter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/payment/UPIAdapter.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/payment/UPIAdapter.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\payment\UPIAdapter.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\payment\UPIAdapter.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\payment\UPIAdapter.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/payment/UPIAdapter.cpp.i: cmake_force
@@ -469,7 +499,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/payment/UserWallet.cpp.obj: CMakeFiles/AuraRe
 CMakeFiles/AuraRetailOsGui.dir/src/payment/UserWallet.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/payment/UserWallet.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/payment/UserWallet.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/payment/UserWallet.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/payment/UserWallet.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/payment/UserWallet.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/payment/UserWallet.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\payment\UserWallet.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\payment\UserWallet.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\payment\UserWallet.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/payment/UserWallet.cpp.i: cmake_force
@@ -484,7 +514,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/payment/WalletAdapter.cpp.obj: CMakeFiles/Aur
 CMakeFiles/AuraRetailOsGui.dir/src/payment/WalletAdapter.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/payment/WalletAdapter.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/payment/WalletAdapter.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/payment/WalletAdapter.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/payment/WalletAdapter.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/payment/WalletAdapter.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/payment/WalletAdapter.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\payment\WalletAdapter.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\payment\WalletAdapter.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\payment\WalletAdapter.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/payment/WalletAdapter.cpp.i: cmake_force
@@ -499,7 +529,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/persistence/ConfigStore.cpp.obj: CMakeFiles/A
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/ConfigStore.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/ConfigStore.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/persistence/ConfigStore.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/ConfigStore.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/persistence/ConfigStore.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/persistence/ConfigStore.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/persistence/ConfigStore.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\persistence\ConfigStore.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\persistence\ConfigStore.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\persistence\ConfigStore.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/ConfigStore.cpp.i: cmake_force
@@ -514,7 +544,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/persistence/InventoryStore.cpp.obj: CMakeFile
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/InventoryStore.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/InventoryStore.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/persistence/InventoryStore.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/InventoryStore.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/persistence/InventoryStore.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/persistence/InventoryStore.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/persistence/InventoryStore.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\persistence\InventoryStore.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\persistence\InventoryStore.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\persistence\InventoryStore.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/InventoryStore.cpp.i: cmake_force
@@ -529,7 +559,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/persistence/TransactionLog.cpp.obj: CMakeFile
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/TransactionLog.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/TransactionLog.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/persistence/TransactionLog.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/TransactionLog.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/persistence/TransactionLog.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/persistence/TransactionLog.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/persistence/TransactionLog.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\persistence\TransactionLog.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\persistence\TransactionLog.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\persistence\TransactionLog.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/TransactionLog.cpp.i: cmake_force
@@ -544,7 +574,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/persistence/UserStore.cpp.obj: CMakeFiles/Aur
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/UserStore.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/UserStore.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/persistence/UserStore.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/UserStore.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/persistence/UserStore.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/persistence/UserStore.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/persistence/UserStore.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\persistence\UserStore.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\persistence\UserStore.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\persistence\UserStore.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/persistence/UserStore.cpp.i: cmake_force
@@ -559,7 +589,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/pricing/DiscountPricing.cpp.obj: CMakeFiles/A
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/DiscountPricing.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/DiscountPricing.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/pricing/DiscountPricing.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/DiscountPricing.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/pricing/DiscountPricing.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/pricing/DiscountPricing.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/pricing/DiscountPricing.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\pricing\DiscountPricing.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\pricing\DiscountPricing.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\pricing\DiscountPricing.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/DiscountPricing.cpp.i: cmake_force
@@ -574,7 +604,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/pricing/EmergencyPricing.cpp.obj: CMakeFiles/
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/EmergencyPricing.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/EmergencyPricing.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/pricing/EmergencyPricing.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/EmergencyPricing.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/pricing/EmergencyPricing.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/pricing/EmergencyPricing.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/pricing/EmergencyPricing.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\pricing\EmergencyPricing.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\pricing\EmergencyPricing.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\pricing\EmergencyPricing.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/EmergencyPricing.cpp.i: cmake_force
@@ -589,7 +619,7 @@ CMakeFiles/AuraRetailOsGui.dir/src/pricing/StandardPricing.cpp.obj: CMakeFiles/A
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/StandardPricing.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/includes_CXX.rsp
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/StandardPricing.cpp.obj: C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/src/pricing/StandardPricing.cpp
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/StandardPricing.cpp.obj: CMakeFiles/AuraRetailOsGui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/pricing/StandardPricing.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/AuraRetailOsGui.dir/src/pricing/StandardPricing.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AuraRetailOsGui.dir/src/pricing/StandardPricing.cpp.obj -MF CMakeFiles\AuraRetailOsGui.dir\src\pricing\StandardPricing.cpp.obj.d -o CMakeFiles\AuraRetailOsGui.dir\src\pricing\StandardPricing.cpp.obj -c "C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\src\pricing\StandardPricing.cpp"
 
 CMakeFiles/AuraRetailOsGui.dir/src/pricing/StandardPricing.cpp.i: cmake_force
@@ -605,12 +635,14 @@ AuraRetailOsGui_OBJECTS = \
 "CMakeFiles/AuraRetailOsGui.dir/AuraRetailOsGui_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/AuraRetailOsGui.dir/gui/main.cpp.obj" \
 "CMakeFiles/AuraRetailOsGui.dir/gui/mainWindow.cpp.obj" \
+"CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.obj" \
 "CMakeFiles/AuraRetailOsGui.dir/src/command/PurchaseItemCommand.cpp.obj" \
 "CMakeFiles/AuraRetailOsGui.dir/src/command/RefundCommand.cpp.obj" \
 "CMakeFiles/AuraRetailOsGui.dir/src/command/RestockCommand.cpp.obj" \
 "CMakeFiles/AuraRetailOsGui.dir/src/core/CentralRegistry.cpp.obj" \
 "CMakeFiles/AuraRetailOsGui.dir/src/core/Kiosk.cpp.obj" \
 "CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.obj" \
+"CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.obj" \
 "CMakeFiles/AuraRetailOsGui.dir/src/factory/EmergencyFactory.cpp.obj" \
 "CMakeFiles/AuraRetailOsGui.dir/src/factory/FoodFactory.cpp.obj" \
 "CMakeFiles/AuraRetailOsGui.dir/src/factory/KioskFactorySimple.cpp.obj" \
@@ -644,12 +676,14 @@ AuraRetailOsGui_EXTERNAL_OBJECTS =
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/AuraRetailOsGui_autogen/mocs_compilation.cpp.obj
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/gui/main.cpp.obj
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/gui/mainWindow.cpp.obj
+AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.obj
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/src/command/PurchaseItemCommand.cpp.obj
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/src/command/RefundCommand.cpp.obj
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/src/command/RestockCommand.cpp.obj
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/src/core/CentralRegistry.cpp.obj
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/src/core/Kiosk.cpp.obj
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.obj
+AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.obj
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/src/factory/EmergencyFactory.cpp.obj
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/src/factory/FoodFactory.cpp.obj
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/src/factory/KioskFactorySimple.cpp.obj
@@ -684,7 +718,7 @@ AuraRetailOsGui.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6EntryPoint.a
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/linkLibs.rsp
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/objects1.rsp
 AuraRetailOsGui.exe: CMakeFiles/AuraRetailOsGui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable AuraRetailOsGui.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\kbs38\Desktop\Desktop Files\College\DA\AuraRetailOS-ModularKioskSystem\AuraRetailOs\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Linking CXX executable AuraRetailOsGui.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\AuraRetailOsGui.dir\link.txt --verbose=$(VERBOSE)
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy_directory "C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/data" "C:/Users/kbs38/Desktop/Desktop Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/data"
 

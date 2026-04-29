@@ -34,7 +34,9 @@ private slots:
     void onViewTransactionsClicked();
     void onTopUpWalletClicked();
     void onBackToMainClicked();
+    void onRunDiagnosisClicked();
     void refreshWalletBalance();
+
 
 private:
     Ui::MainWindow *ui;
@@ -74,7 +76,9 @@ private:
     QPushButton* btnRestock;
     QPushButton* btnViewStock;
     QPushButton* btnViewTransactions;
+    QPushButton* btnRunDiagnosis;
     QPushButton* btnAdminBack;
+
     QTextEdit* adminLogBox;
     
     void setupProgrammaticUI();

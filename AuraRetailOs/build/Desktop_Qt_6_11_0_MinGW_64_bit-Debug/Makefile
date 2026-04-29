@@ -191,6 +191,30 @@ AuraRetailOsGui_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsGui.dir\build.make CMakeFiles/AuraRetailOsGui.dir/AuraRetailOsGui_autogen/mocs_compilation.cpp.s
 .PHONY : AuraRetailOsGui_autogen/mocs_compilation.cpp.s
 
+gui/diagnosisdialog.obj: gui/diagnosisdialog.cpp.obj
+.PHONY : gui/diagnosisdialog.obj
+
+# target to build an object file
+gui/diagnosisdialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsGui.dir\build.make CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.obj
+.PHONY : gui/diagnosisdialog.cpp.obj
+
+gui/diagnosisdialog.i: gui/diagnosisdialog.cpp.i
+.PHONY : gui/diagnosisdialog.i
+
+# target to preprocess a source file
+gui/diagnosisdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsGui.dir\build.make CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.i
+.PHONY : gui/diagnosisdialog.cpp.i
+
+gui/diagnosisdialog.s: gui/diagnosisdialog.cpp.s
+.PHONY : gui/diagnosisdialog.s
+
+# target to generate assembly for a file
+gui/diagnosisdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsGui.dir\build.make CMakeFiles/AuraRetailOsGui.dir/gui/diagnosisdialog.cpp.s
+.PHONY : gui/diagnosisdialog.cpp.s
+
 gui/main.obj: gui/main.cpp.obj
 .PHONY : gui/main.obj
 
@@ -424,6 +448,33 @@ src/core/KioskBuilder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsCli.dir\build.make CMakeFiles/AuraRetailOsCli.dir/src/core/KioskBuilder.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsGui.dir\build.make CMakeFiles/AuraRetailOsGui.dir/src/core/KioskBuilder.cpp.s
 .PHONY : src/core/KioskBuilder.cpp.s
+
+src/core/diagnosisservice.obj: src/core/diagnosisservice.cpp.obj
+.PHONY : src/core/diagnosisservice.obj
+
+# target to build an object file
+src/core/diagnosisservice.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsCli.dir\build.make CMakeFiles/AuraRetailOsCli.dir/src/core/diagnosisservice.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsGui.dir\build.make CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.obj
+.PHONY : src/core/diagnosisservice.cpp.obj
+
+src/core/diagnosisservice.i: src/core/diagnosisservice.cpp.i
+.PHONY : src/core/diagnosisservice.i
+
+# target to preprocess a source file
+src/core/diagnosisservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsCli.dir\build.make CMakeFiles/AuraRetailOsCli.dir/src/core/diagnosisservice.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsGui.dir\build.make CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.i
+.PHONY : src/core/diagnosisservice.cpp.i
+
+src/core/diagnosisservice.s: src/core/diagnosisservice.cpp.s
+.PHONY : src/core/diagnosisservice.s
+
+# target to generate assembly for a file
+src/core/diagnosisservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsCli.dir\build.make CMakeFiles/AuraRetailOsCli.dir/src/core/diagnosisservice.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AuraRetailOsGui.dir\build.make CMakeFiles/AuraRetailOsGui.dir/src/core/diagnosisservice.cpp.s
+.PHONY : src/core/diagnosisservice.cpp.s
 
 src/factory/EmergencyFactory.obj: src/factory/EmergencyFactory.cpp.obj
 .PHONY : src/factory/EmergencyFactory.obj
@@ -1142,6 +1193,9 @@ help:
 	@echo ... AuraRetailOsGui_autogen/mocs_compilation.obj
 	@echo ... AuraRetailOsGui_autogen/mocs_compilation.i
 	@echo ... AuraRetailOsGui_autogen/mocs_compilation.s
+	@echo ... gui/diagnosisdialog.obj
+	@echo ... gui/diagnosisdialog.i
+	@echo ... gui/diagnosisdialog.s
 	@echo ... gui/main.obj
 	@echo ... gui/main.i
 	@echo ... gui/main.s
@@ -1169,6 +1223,9 @@ help:
 	@echo ... src/core/KioskBuilder.obj
 	@echo ... src/core/KioskBuilder.i
 	@echo ... src/core/KioskBuilder.s
+	@echo ... src/core/diagnosisservice.obj
+	@echo ... src/core/diagnosisservice.i
+	@echo ... src/core/diagnosisservice.s
 	@echo ... src/factory/EmergencyFactory.obj
 	@echo ... src/factory/EmergencyFactory.i
 	@echo ... src/factory/EmergencyFactory.s

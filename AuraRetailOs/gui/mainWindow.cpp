@@ -7,6 +7,8 @@
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QInputDialog>
+#include "diagnosisdialog.h"
+
 
 // include your builder
 #include "core/KioskBuilder.h"
@@ -44,7 +46,9 @@ MainWindow::MainWindow(QWidget *parent)
     }
     
     setupProgrammaticUI();
+    this->resize(900, 700);
 }
+
 
 MainWindow::~MainWindow() {
     delete ui;
@@ -96,7 +100,15 @@ void MainWindow::setupProgrammaticUI() {
     roleLayout->addSpacing(20);
     roleLayout->addWidget(btnCustomer);
     roleLayout->addWidget(btnAdmin);
+    
+    // Add Run Diagnosis to Login screen as well for better visibility
+    QPushButton* btnMainDiagnosis = new QPushButton("Run System Diagnosis");
+    btnMainDiagnosis->setStyleSheet("QPushButton { background-color: #333333; color: #4caf50; font-weight: bold; padding: 10px; }");
+    roleLayout->addWidget(btnMainDiagnosis);
+    connect(btnMainDiagnosis, &QPushButton::clicked, this, &MainWindow::onRunDiagnosisClicked);
+
     roleLayout->addStretch();
+
 
     // ==========================================
     // Page 1: Customer View
@@ -198,6 +210,12 @@ void MainWindow::setupProgrammaticUI() {
     adminActionsLayout->addWidget(btnViewTransactions);
     adminLayout->addLayout(adminActionsLayout);
 
+    QHBoxLayout* adminActionsLayout2 = new QHBoxLayout();
+    btnRunDiagnosis = new QPushButton("Run Diagnosis");
+    adminActionsLayout2->addWidget(btnRunDiagnosis);
+    adminLayout->addLayout(adminActionsLayout2);
+
+
     adminLayout->addWidget(adminLogBox);
     adminLayout->addWidget(btnAdminBack);
 
@@ -216,7 +234,9 @@ void MainWindow::setupProgrammaticUI() {
     connect(btnRestock, &QPushButton::clicked, this, &MainWindow::onRestockClicked);
     connect(btnViewStock, &QPushButton::clicked, this, &MainWindow::onViewStockClicked);
     connect(btnViewTransactions, &QPushButton::clicked, this, &MainWindow::onViewTransactionsClicked);
+    connect(btnRunDiagnosis, &QPushButton::clicked, this, &MainWindow::onRunDiagnosisClicked);
     connect(btnTopUpWallet, &QPushButton::clicked, this, &MainWindow::onTopUpWalletClicked);
+
     connect(btnCustBack, &QPushButton::clicked, this, &MainWindow::onBackToMainClicked);
     connect(btnAdminBack, &QPushButton::clicked, this, &MainWindow::onBackToMainClicked);
 }
@@ -330,8 +350,11 @@ void MainWindow::onBuyClicked() {
         kiosk->setPayment(new CardAdapter());
     }
 
+    std::string txnId = "TXN" + QDateTime::currentDateTime().toString("mmsszzz").toStdString();
+
     for (int i = 0; i < qty; ++i) {
         PurchaseItemCommand cmd(product.toStdString(),
+
                                 kiosk->getInventory(),
                                 kiosk->getPayment(),
                                 kiosk->getDispenser(),
@@ -339,9 +362,10 @@ void MainWindow::onBuyClicked() {
         cmd.execute();
         
         std::string logResult = cmd.getLog();
-        logResult = "[User: " + currentUserId.toStdString() + "] " + logResult;
+        logResult = "[User: " + currentUserId.toStdString() + "] [ID: " + txnId + "] " + logResult;
         TransactionLog txLog("data/transactions.csv");
         txLog.append(logResult);
+
 
         QString timeStr = QDateTime::currentDateTime().toString("hh:mm:ss");
         QString color = (logResult.find("SUCCESS") != std::string::npos) ? "#4caf50" : "#f44336";
@@ -349,10 +373,12 @@ void MainWindow::onBuyClicked() {
 
         QString logMsg = QString("<span style=\"color:#888888;\">[%1]</span> "
                                  "<span style=\"color:%2; font-weight:bold;\">%3</span>: %4 "
+                                 "<br/><span style=\"color:#aaaaaa; font-size:10px;\">Transaction ID: %5</span>"
                                  "<br/><span style=\"color:#ffeb3b; font-size:10px;\">[Patterns: Command, Strategy, Adapter]</span>")
-                             .arg(timeStr, color, status, QString::fromStdString(logResult));
+                             .arg(timeStr, color, status, QString::fromStdString(logResult), QString::fromStdString(txnId));
 
         custLogBox->append(logMsg);
+
     }
     
     if (method == "Wallet") {
@@ -505,4 +531,9 @@ void MainWindow::onTopUpWalletClicked() {
         refreshWalletBalance();
         custLogBox->append(QString("<span style=\"color:#4caf50;\">[Wallet] Added Rs. %1 to wallet via %2.</span>").arg(amount).arg(method));
     }
+}
+
+void MainWindow::onRunDiagnosisClicked() {
+    DiagnosisDialog dialog(kiosk, this);
+    dialog.exec();
 }
