@@ -384,6 +384,5 @@ C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/include/core/Kiosk.h \
   C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/include/core/KioskInterface.h \
   C:/Users/kbs38/Desktop/Desktop\ Files/College/DA/AuraRetailOS-ModularKioskSystem/AuraRetailOs/include/core/diagnosisservice.h

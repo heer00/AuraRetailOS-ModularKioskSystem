@@ -5,12 +5,12 @@
 #include <QLabel>
 #include <QPushButton>
 #include "core/diagnosisservice.h"
-#include "core/Kiosk.h"
+#include "core/KioskInterface.h"
 
 class DiagnosisDialog : public QDialog {
     Q_OBJECT
 public:
-    explicit DiagnosisDialog(Kiosk* kiosk, QWidget *parent = nullptr);
+    explicit DiagnosisDialog(KioskInterface* kiosk, QWidget *parent = nullptr);
 
 private slots:
     void onRunAgain();
@@ -20,9 +20,10 @@ private:
     QPushButton* btnRunAgain;
     QPushButton* btnClose;
     DiagnosisService service;
-    Kiosk* kiosk;
+    KioskInterface* kiosk;
     
     void loadReport();
 };
+
 
 #endif

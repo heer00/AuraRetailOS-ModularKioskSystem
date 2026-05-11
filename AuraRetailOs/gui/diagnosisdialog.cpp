@@ -3,7 +3,7 @@
 #include <QHBoxLayout>
 #include <QFont>
 
-DiagnosisDialog::DiagnosisDialog(Kiosk* kiosk, QWidget *parent) 
+DiagnosisDialog::DiagnosisDialog(KioskInterface* kiosk, QWidget *parent) 
     : QDialog(parent), kiosk(kiosk) {
     setWindowTitle("System Diagnosis");
     setMinimumSize(400, 500);
